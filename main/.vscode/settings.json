@@ -1,0 +1,27 @@
+{
+    "files.associations": {
+        "i2c.h": "c",
+        "gpio.h": "c",
+        "stdio.h": "c",
+        "portmacro.h": "c",
+        "freertos.h": "c",
+        "esp_intr_alloc.h": "c",
+        "bme280.h": "c",
+        "bme280_defs.h": "c",
+        "param.h": "c",
+        "esp_http_server.h": "c",
+        "nvs_flash.h": "c",
+        "esp_netif.h": "c",
+        "esp_event.h": "c",
+        "projdefs.h": "c",
+        "freertosconfig.h": "c",
+        "esp_err.h": "c",
+        "task.h": "c",
+        "esp_log.h": "c",
+        "esp_wifi.h": "c",
+        "gpio_types.h": "c",
+        "sockets.h": "c",
+        "event_groups.h": "c",
+        "esp_system.h": "c"
+    }
+}

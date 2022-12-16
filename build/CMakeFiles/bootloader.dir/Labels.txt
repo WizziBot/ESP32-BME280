@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/wizzi/esp-idf/projects/BME280/build/CMakeFiles/bootloader
+/home/wizzi/esp-idf/projects/BME280/build/CMakeFiles/bootloader.rule
+/home/wizzi/esp-idf/projects/BME280/build/CMakeFiles/bootloader-complete.rule
+/home/wizzi/esp-idf/projects/BME280/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/wizzi/esp-idf/projects/BME280/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/wizzi/esp-idf/projects/BME280/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/wizzi/esp-idf/projects/BME280/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/wizzi/esp-idf/projects/BME280/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/wizzi/esp-idf/projects/BME280/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/wizzi/esp-idf/projects/BME280/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

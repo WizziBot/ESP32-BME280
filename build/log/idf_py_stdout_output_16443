@@ -1,0 +1,82 @@
+[0/1] Re-running CMake...
+-- Component directory /home/wizzi/esp-idf/projects/BME280/components/BME280_driver does not contain a CMakeLists.txt file. No component will be added
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/wizzi/esp-idf/projects/BME280/sdkconfig
+-- App "BME280" version: v5.1-dev-1908-g439a709c42-dirty
+-- Adding linker script /home/wizzi/esp-idf/projects/BME280/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/wizzi/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/wizzi/esp-idf/components/app_trace /home/wizzi/esp-idf/components/app_update /home/wizzi/esp-idf/components/bootloader /home/wizzi/esp-idf/components/bootloader_support /home/wizzi/esp-idf/components/bt /home/wizzi/esp-idf/components/cmock /home/wizzi/esp-idf/components/console /home/wizzi/esp-idf/components/cxx /home/wizzi/esp-idf/components/driver /home/wizzi/esp-idf/components/efuse /home/wizzi/esp-idf/components/esp-tls /home/wizzi/esp-idf/components/esp_adc /home/wizzi/esp-idf/components/esp_app_format /home/wizzi/esp-idf/components/esp_common /home/wizzi/esp-idf/components/esp_eth /home/wizzi/esp-idf/components/esp_event /home/wizzi/esp-idf/components/esp_gdbstub /home/wizzi/esp-idf/components/esp_hid /home/wizzi/esp-idf/components/esp_http_client /home/wizzi/esp-idf/components/esp_http_server /home/wizzi/esp-idf/components/esp_https_ota /home/wizzi/esp-idf/components/esp_https_server /home/wizzi/esp-idf/components/esp_hw_support /home/wizzi/esp-idf/components/esp_lcd /home/wizzi/esp-idf/components/esp_local_ctrl /home/wizzi/esp-idf/components/esp_netif /home/wizzi/esp-idf/components/esp_partition /home/wizzi/esp-idf/components/esp_phy /home/wizzi/esp-idf/components/esp_pm /home/wizzi/esp-idf/components/esp_psram /home/wizzi/esp-idf/components/esp_ringbuf /home/wizzi/esp-idf/components/esp_rom /home/wizzi/esp-idf/components/esp_system /home/wizzi/esp-idf/components/esp_timer /home/wizzi/esp-idf/components/esp_wifi /home/wizzi/esp-idf/components/espcoredump /home/wizzi/esp-idf/components/esptool_py /home/wizzi/esp-idf/components/fatfs /home/wizzi/esp-idf/components/freertos /home/wizzi/esp-idf/components/hal /home/wizzi/esp-idf/components/heap /home/wizzi/esp-idf/components/http_parser /home/wizzi/esp-idf/components/idf_test /home/wizzi/esp-idf/components/ieee802154 /home/wizzi/esp-idf/components/json /home/wizzi/esp-idf/components/log /home/wizzi/esp-idf/components/lwip /home/wizzi/esp-idf/projects/BME280/main /home/wizzi/esp-idf/components/mbedtls /home/wizzi/esp-idf/components/mqtt /home/wizzi/esp-idf/components/newlib /home/wizzi/esp-idf/components/nvs_flash /home/wizzi/esp-idf/components/openthread /home/wizzi/esp-idf/components/partition_table /home/wizzi/esp-idf/components/perfmon /home/wizzi/esp-idf/components/protobuf-c /home/wizzi/esp-idf/components/protocomm /home/wizzi/esp-idf/components/pthread /home/wizzi/esp-idf/components/sdmmc /home/wizzi/esp-idf/components/soc /home/wizzi/esp-idf/components/spi_flash /home/wizzi/esp-idf/components/spiffs /home/wizzi/esp-idf/components/tcp_transport /home/wizzi/esp-idf/components/ulp /home/wizzi/esp-idf/components/unity /home/wizzi/esp-idf/components/usb /home/wizzi/esp-idf/components/vfs /home/wizzi/esp-idf/components/wear_levelling /home/wizzi/esp-idf/components/wifi_provisioning /home/wizzi/esp-idf/components/wpa_supplicant /home/wizzi/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wizzi/esp-idf/projects/BME280/build
+[1/5] cd /home/wizzi/esp-idf/projects/BME280/build/esp-idf/esptool_py && /home/wizzi/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/wizzi/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/wizzi/esp-idf/projects/BME280/build/partition_table/partition-table.bin /home/wizzi/esp-idf/projects/BME280/build/BME280.bin
+BME280.bin binary size 0x30f80 bytes. Smallest app partition is 0x100000 bytes. 0xcf080 bytes (81%) free.
+[2/5] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/wizzi/esp-idf/projects/BME280/sdkconfig
+-- Adding linker script /home/wizzi/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- App "bootloader" version: v5.1-dev-1908-g439a709c42-dirty
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/wizzi/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script /home/wizzi/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/wizzi/esp-idf/components/bootloader /home/wizzi/esp-idf/components/bootloader_support /home/wizzi/esp-idf/components/efuse /home/wizzi/esp-idf/components/esp_app_format /home/wizzi/esp-idf/components/esp_common /home/wizzi/esp-idf/components/esp_hw_support /home/wizzi/esp-idf/components/esp_rom /home/wizzi/esp-idf/components/esp_system /home/wizzi/esp-idf/components/esptool_py /home/wizzi/esp-idf/components/freertos /home/wizzi/esp-idf/components/hal /home/wizzi/esp-idf/components/log /home/wizzi/esp-idf/components/bootloader/subproject/main /home/wizzi/esp-idf/components/bootloader/subproject/components/micro-ecc /home/wizzi/esp-idf/components/newlib /home/wizzi/esp-idf/components/partition_table /home/wizzi/esp-idf/components/soc /home/wizzi/esp-idf/components/spi_flash /home/wizzi/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wizzi/esp-idf/projects/BME280/build/bootloader
+[1/1] cd /home/wizzi/esp-idf/projects/BME280/build/bootloader/esp-idf/esptool_py && /home/wizzi/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/wizzi/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/wizzi/esp-idf/projects/BME280/build/bootloader/bootloader.bin
+Bootloader binary size 0x6720 bytes. 0x8e0 bytes (8%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/wizzi/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/wizzi/esp-idf -D "SERIAL_TOOL=/home/wizzi/.espressif/python_env/idf5.1_py3.8_env/bin/python;;/home/wizzi/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/wizzi/esp-idf/projects/BME280/build -P /home/wizzi/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 BME280.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.4
+Serial port /dev/ttyUSB0
+Connecting......
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 0c:b8:15:f7:7b:18
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00040fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26400 bytes to 16484...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000769f... (100 %)
+Wrote 26400 bytes (16484 compressed) at 0x00001000 in 0.7 seconds (effective 284.1 kbit/s)...
+Hash of data verified.
+Compressed 200576 bytes to 105259...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001ca4c... (28 %)
+Writing at 0x00022259... (42 %)
+Writing at 0x00028130... (57 %)
+Writing at 0x00030d74... (71 %)
+Writing at 0x00038a04... (85 %)
+Writing at 0x0003e866... (100 %)
+Wrote 200576 bytes (105259 compressed) at 0x00010000 in 2.5 seconds (effective 642.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 321.4 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

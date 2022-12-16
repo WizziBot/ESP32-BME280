@@ -1,0 +1,584 @@
+[0/1] Re-running CMake...
+-- Component directory /home/wizzi/esp-idf/projects/BME280/components/BME280_driver does not contain a CMakeLists.txt file. No component will be added
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/wizzi/esp-idf/projects/BME280/sdkconfig
+-- App "BME280" version: v5.1-dev-1908-g439a709c42-dirty
+-- Adding linker script /home/wizzi/esp-idf/projects/BME280/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/wizzi/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/wizzi/esp-idf/components/app_trace /home/wizzi/esp-idf/components/app_update /home/wizzi/esp-idf/components/bootloader /home/wizzi/esp-idf/components/bootloader_support /home/wizzi/esp-idf/components/bt /home/wizzi/esp-idf/components/cmock /home/wizzi/esp-idf/components/console /home/wizzi/esp-idf/components/cxx /home/wizzi/esp-idf/components/driver /home/wizzi/esp-idf/components/efuse /home/wizzi/esp-idf/components/esp-tls /home/wizzi/esp-idf/components/esp_adc /home/wizzi/esp-idf/components/esp_app_format /home/wizzi/esp-idf/components/esp_common /home/wizzi/esp-idf/components/esp_eth /home/wizzi/esp-idf/components/esp_event /home/wizzi/esp-idf/components/esp_gdbstub /home/wizzi/esp-idf/components/esp_hid /home/wizzi/esp-idf/components/esp_http_client /home/wizzi/esp-idf/components/esp_http_server /home/wizzi/esp-idf/components/esp_https_ota /home/wizzi/esp-idf/components/esp_https_server /home/wizzi/esp-idf/components/esp_hw_support /home/wizzi/esp-idf/components/esp_lcd /home/wizzi/esp-idf/components/esp_local_ctrl /home/wizzi/esp-idf/components/esp_netif /home/wizzi/esp-idf/components/esp_partition /home/wizzi/esp-idf/components/esp_phy /home/wizzi/esp-idf/components/esp_pm /home/wizzi/esp-idf/components/esp_psram /home/wizzi/esp-idf/components/esp_ringbuf /home/wizzi/esp-idf/components/esp_rom /home/wizzi/esp-idf/components/esp_system /home/wizzi/esp-idf/components/esp_timer /home/wizzi/esp-idf/components/esp_wifi /home/wizzi/esp-idf/components/espcoredump /home/wizzi/esp-idf/components/esptool_py /home/wizzi/esp-idf/components/fatfs /home/wizzi/esp-idf/components/freertos /home/wizzi/esp-idf/components/hal /home/wizzi/esp-idf/components/heap /home/wizzi/esp-idf/components/http_parser /home/wizzi/esp-idf/components/idf_test /home/wizzi/esp-idf/components/ieee802154 /home/wizzi/esp-idf/components/json /home/wizzi/esp-idf/components/log /home/wizzi/esp-idf/components/lwip /home/wizzi/esp-idf/projects/BME280/main /home/wizzi/esp-idf/components/mbedtls /home/wizzi/esp-idf/components/mqtt /home/wizzi/esp-idf/components/newlib /home/wizzi/esp-idf/components/nvs_flash /home/wizzi/esp-idf/components/openthread /home/wizzi/esp-idf/components/partition_table /home/wizzi/esp-idf/components/perfmon /home/wizzi/esp-idf/components/protobuf-c /home/wizzi/esp-idf/components/protocomm /home/wizzi/esp-idf/components/pthread /home/wizzi/esp-idf/components/sdmmc /home/wizzi/esp-idf/components/soc /home/wizzi/esp-idf/components/spi_flash /home/wizzi/esp-idf/components/spiffs /home/wizzi/esp-idf/components/tcp_transport /home/wizzi/esp-idf/components/ulp /home/wizzi/esp-idf/components/unity /home/wizzi/esp-idf/components/usb /home/wizzi/esp-idf/components/vfs /home/wizzi/esp-idf/components/wear_levelling /home/wizzi/esp-idf/components/wifi_provisioning /home/wizzi/esp-idf/components/wpa_supplicant /home/wizzi/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wizzi/esp-idf/projects/BME280/build
+[1/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/BME280.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/BME280.c.obj 
+/home/wizzi/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1-dev-1908-g439a709c42-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DUNITY_INCLUDE_CONFIG_H -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/wizzi/esp-idf/projects/BME280/build/config -I/home/wizzi/esp-idf/projects/BME280/main -I/home/wizzi/esp-idf/components/newlib/platform_include -I/home/wizzi/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/wizzi/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/wizzi/esp-idf/components/freertos/esp_additions/include/freertos -I/home/wizzi/esp-idf/components/freertos/esp_additions/include -I/home/wizzi/esp-idf/components/esp_hw_support/include -I/home/wizzi/esp-idf/components/esp_hw_support/include/soc -I/home/wizzi/esp-idf/components/esp_hw_support/include/soc/esp32 -I/home/wizzi/esp-idf/components/esp_hw_support/port/esp32/. -I/home/wizzi/esp-idf/components/esp_hw_support/port/esp32/private_include -I/home/wizzi/esp-idf/components/heap/include -I/home/wizzi/esp-idf/components/log/include -I/home/wizzi/esp-idf/components/soc/include -I/home/wizzi/esp-idf/components/soc/esp32/. -I/home/wizzi/esp-idf/components/soc/esp32/include -I/home/wizzi/esp-idf/components/hal/esp32/include -I/home/wizzi/esp-idf/components/hal/include -I/home/wizzi/esp-idf/components/hal/platform_port/include -I/home/wizzi/esp-idf/components/esp_rom/include -I/home/wizzi/esp-idf/components/esp_rom/include/esp32 -I/home/wizzi/esp-idf/components/esp_rom/esp32 -I/home/wizzi/esp-idf/components/esp_common/include -I/home/wizzi/esp-idf/components/esp_system/include -I/home/wizzi/esp-idf/components/esp_system/port/soc -I/home/wizzi/esp-idf/components/esp_system/port/include/private -I/home/wizzi/esp-idf/components/xtensa/include -I/home/wizzi/esp-idf/components/xtensa/esp32/include -I/home/wizzi/esp-idf/components/lwip/include -I/home/wizzi/esp-idf/components/lwip/include/apps -I/home/wizzi/esp-idf/components/lwip/include/apps/sntp -I/home/wizzi/esp-idf/components/lwip/lwip/src/include -I/home/wizzi/esp-idf/components/lwip/port/esp32/include -I/home/wizzi/esp-idf/components/lwip/port/esp32/include/arch -I/home/wizzi/esp-idf/components/esp_ringbuf/include -I/home/wizzi/esp-idf/components/efuse/include -I/home/wizzi/esp-idf/components/efuse/esp32/include -I/home/wizzi/esp-idf/components/driver/include -I/home/wizzi/esp-idf/components/driver/deprecated -I/home/wizzi/esp-idf/components/driver/esp32/include -I/home/wizzi/esp-idf/components/esp_pm/include -I/home/wizzi/esp-idf/components/mbedtls/port/include -I/home/wizzi/esp-idf/components/mbedtls/mbedtls/include -I/home/wizzi/esp-idf/components/mbedtls/mbedtls/library -I/home/wizzi/esp-idf/components/mbedtls/esp_crt_bundle/include -I/home/wizzi/esp-idf/components/esp_app_format/include -I/home/wizzi/esp-idf/components/bootloader_support/include -I/home/wizzi/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/wizzi/esp-idf/components/esp_partition/include -I/home/wizzi/esp-idf/components/app_update/include -I/home/wizzi/esp-idf/components/spi_flash/include -I/home/wizzi/esp-idf/components/pthread/include -I/home/wizzi/esp-idf/components/esp_timer/include -I/home/wizzi/esp-idf/components/app_trace/include -I/home/wizzi/esp-idf/components/esp_event/include -I/home/wizzi/esp-idf/components/nvs_flash/include -I/home/wizzi/esp-idf/components/esp_phy/include -I/home/wizzi/esp-idf/components/esp_phy/esp32/include -I/home/wizzi/esp-idf/components/vfs/include -I/home/wizzi/esp-idf/components/esp_netif/include -I/home/wizzi/esp-idf/components/wpa_supplicant/include -I/home/wizzi/esp-idf/components/wpa_supplicant/port/include -I/home/wizzi/esp-idf/components/wpa_supplicant/esp_supplicant/include -I/home/wizzi/esp-idf/components/esp_wifi/include -I/home/wizzi/esp-idf/components/unity/include -I/home/wizzi/esp-idf/components/unity/unity/src -I/home/wizzi/esp-idf/components/cmock/CMock/src -I/home/wizzi/esp-idf/components/console -I/home/wizzi/esp-idf/components/http_parser -I/home/wizzi/esp-idf/components/esp-tls -I/home/wizzi/esp-idf/components/esp-tls/esp-tls-crypto -I/home/wizzi/esp-idf/components/esp_adc/include -I/home/wizzi/esp-idf/components/esp_adc/interface -I/home/wizzi/esp-idf/components/esp_adc/esp32/include -I/home/wizzi/esp-idf/components/esp_adc/deprecated/include -I/home/wizzi/esp-idf/components/esp_eth/include -I/home/wizzi/esp-idf/components/esp_gdbstub/include -I/home/wizzi/esp-idf/components/esp_gdbstub/xtensa -I/home/wizzi/esp-idf/components/esp_gdbstub/esp32 -I/home/wizzi/esp-idf/components/esp_hid/include -I/home/wizzi/esp-idf/components/tcp_transport/include -I/home/wizzi/esp-idf/components/esp_http_client/include -I/home/wizzi/esp-idf/components/esp_http_server/include -I/home/wizzi/esp-idf/components/esp_https_ota/include -I/home/wizzi/esp-idf/components/esp_lcd/include -I/home/wizzi/esp-idf/components/esp_lcd/interface -I/home/wizzi/esp-idf/components/protobuf-c/protobuf-c -I/home/wizzi/esp-idf/components/protocomm/include/common -I/home/wizzi/esp-idf/components/protocomm/include/security -I/home/wizzi/esp-idf/components/protocomm/include/transports -I/home/wizzi/esp-idf/components/esp_local_ctrl/include -I/home/wizzi/esp-idf/components/esp_psram/include -I/home/wizzi/esp-idf/components/espcoredump/include -I/home/wizzi/esp-idf/components/espcoredump/include/port/xtensa -I/home/wizzi/esp-idf/components/wear_levelling/include -I/home/wizzi/esp-idf/components/sdmmc/include -I/home/wizzi/esp-idf/components/fatfs/diskio -I/home/wizzi/esp-idf/components/fatfs/vfs -I/home/wizzi/esp-idf/components/fatfs/src -I/home/wizzi/esp-idf/components/idf_test/include -I/home/wizzi/esp-idf/components/idf_test/include/esp32 -I/home/wizzi/esp-idf/components/ieee802154/include -I/home/wizzi/esp-idf/components/json/cJSON -I/home/wizzi/esp-idf/components/mqtt/esp-mqtt/include -I/home/wizzi/esp-idf/components/perfmon/include -I/home/wizzi/esp-idf/components/spiffs/include -I/home/wizzi/esp-idf/components/ulp/ulp_common/include -I/home/wizzi/esp-idf/components/ulp/ulp_common/include/esp32 -I/home/wizzi/esp-idf/components/wifi_provisioning/include -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/wizzi/esp-idf/projects/BME280=. -fmacro-prefix-map=/home/wizzi/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/BME280.c.obj -MF esp-idf/main/CMakeFiles/__idf_main.dir/BME280.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/BME280.c.obj -c /home/wizzi/esp-idf/projects/BME280/main/BME280.c
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c: In function 'bme_test':
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:31:9: error: 'return' with no value, in function returning non-void [-Werror=return-type]
+   31 |         return;
+      |         ^~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:27:5: note: declared here
+   27 | int bme_test(){
+      |     ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c: In function 'task_bme280_normal_mode':
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:106:17: warning: initialization of 'int8_t (*)(uint8_t,  uint8_t *, uint32_t,  void *)' {aka 'signed char (*)(unsigned char,  unsigned char *, long unsigned int,  void *)'} from incompatible pointer type 'int8_t (*)(uint8_t,  uint8_t *, uint8_t)' {aka 'signed char (*)(unsigned char,  unsigned char *, unsigned char)'} [-Wincompatible-pointer-types]
+  106 |         .read = BME280_I2C_read,
+      |                 ^~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:106:17: note: (near initialization for 'dev.read')
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:107:18: warning: initialization of 'int8_t (*)(uint8_t,  const uint8_t *, uint32_t,  void *)' {aka 'signed char (*)(unsigned char,  const unsigned char *, long unsigned int,  void *)'} from incompatible pointer type 'int8_t (*)(uint8_t,  uint8_t *, uint8_t)' {aka 'signed char (*)(unsigned char,  unsigned char *, unsigned char)'} [-Wincompatible-pointer-types]
+  107 |         .write = BME280_I2C_write,
+      |                  ^~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:107:18: note: (near initialization for 'dev.write')
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:117:17: error: implicit declaration of function 'bme280_set_oversamp_pressure' [-Werror=implicit-function-declaration]
+  117 |     com_rslt += bme280_set_oversamp_pressure(BME280_OVERSAMPLING_16X);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:118:21: error: implicit declaration of function 'bme280_set_oversamp_temperature' [-Werror=implicit-function-declaration]
+  118 |         com_rslt += bme280_set_oversamp_temperature(BME280_OVERSAMPLING_2X);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:119:21: error: implicit declaration of function 'bme280_set_oversamp_humidity' [-Werror=implicit-function-declaration]
+  119 |         com_rslt += bme280_set_oversamp_humidity(BME280_OVERSAMPLING_1X);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:121:21: error: implicit declaration of function 'bme280_set_standby_durn' [-Werror=implicit-function-declaration]
+  121 |         com_rslt += bme280_set_standby_durn(BME280_STANDBY_TIME_10_MS);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:122:21: error: implicit declaration of function 'bme280_set_filter'; did you mean 'bme280_set_regs'? [-Werror=implicit-function-declaration]
+  122 |         com_rslt += bme280_set_filter(BME280_FILTER_COEFF_16);
+      |                     ^~~~~~~~~~~~~~~~~
+      |                     bme280_set_regs
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:124:21: error: implicit declaration of function 'bme280_set_power_mode'; did you mean 'bme280_set_sensor_mode'? [-Werror=implicit-function-declaration]
+  124 |         com_rslt += bme280_set_power_mode(BME280_NORMAL_MODE);
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+      |                     bme280_set_sensor_mode
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:130:36: error: implicit declaration of function 'bme280_read_uncomp_pressure_temperature_humidity' [-Werror=implicit-function-declaration]
+  130 |                         com_rslt = bme280_read_uncomp_pressure_temperature_humidity(
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/wizzi/esp-idf/projects/BME280/main/BME280.c:6:
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:135:41: error: implicit declaration of function 'bme280_compensate_temperature_double' [-Werror=implicit-function-declaration]
+  135 |                                         bme280_compensate_temperature_double(v_uncomp_temperature_s32),
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:136:41: error: implicit declaration of function 'bme280_compensate_pressure_double' [-Werror=implicit-function-declaration]
+  136 |                                         bme280_compensate_pressure_double(v_uncomp_pressure_s32)/100, // Pa -> hPa
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:137:41: error: implicit declaration of function 'bme280_compensate_humidity_double' [-Werror=implicit-function-declaration]
+  137 |                                         bme280_compensate_humidity_double(v_uncomp_humidity_s32));
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:410:137: note: in definition of macro 'ESP_LOG_LEVEL'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                                                                         ^~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%f' expects argument of type 'double', but argument 6 has type 'int' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%f' expects argument of type 'double', but argument 7 has type 'int' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%f' expects argument of type 'double', but argument 8 has type 'int' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%f' expects argument of type 'double', but argument 6 has type 'int' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%f' expects argument of type 'double', but argument 7 has type 'int' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%f' expects argument of type 'double', but argument 8 has type 'int' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:137:8: error: format '%f' expects argument of type 'double', but argument 6 has type 'int' [-Werror=format=]
+  137 |                                         bme280_compensate_humidity_double(v_uncomp_humidity_s32));
+      |        ^                                ~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:137:8: error: format '%f' expects argument of type 'double', but argument 7 has type 'int' [-Werror=format=]
+  137 |                                         bme280_compensate_humidity_double(v_uncomp_humidity_s32));
+      |        ^                                ~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:137:8: error: format '%f' expects argument of type 'double', but argument 8 has type 'int' [-Werror=format=]
+  137 |                                         bme280_compensate_humidity_double(v_uncomp_humidity_s32));
+      |        ^                                ~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:137:8: error: format '%f' expects argument of type 'double', but argument 6 has type 'int' [-Werror=format=]
+  137 |                                         bme280_compensate_humidity_double(v_uncomp_humidity_s32));
+      |        ^                                ~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:137:8: error: format '%f' expects argument of type 'double', but argument 7 has type 'int' [-Werror=format=]
+  137 |                                         bme280_compensate_humidity_double(v_uncomp_humidity_s32));
+      |        ^                                ~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:137:8: error: format '%f' expects argument of type 'double', but argument 8 has type 'int' [-Werror=format=]
+  137 |                                         bme280_compensate_humidity_double(v_uncomp_humidity_s32));
+      |        ^                                ~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%f' expects argument of type 'double', but argument 6 has type 'int' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%f' expects argument of type 'double', but argument 7 has type 'int' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%f' expects argument of type 'double', but argument 8 has type 'int' [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:342:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  342 | #define ESP_LOGI( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_INFO,    tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:134:33: note: in expansion of macro 'ESP_LOGI'
+  134 |                                 ESP_LOGI(TAG, "%.2f degC / %.3f hPa / %.3f %%",
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:139:33: note: in expansion of macro 'ESP_LOGE'
+  139 |                                 ESP_LOGE(TAG, "measure error. code: %d", com_rslt);
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:139:33: note: in expansion of macro 'ESP_LOGE'
+  139 |                                 ESP_LOGE(TAG, "measure error. code: %d", com_rslt);
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:139:8: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  139 |                                 ESP_LOGE(TAG, "measure error. code: %d", com_rslt);
+      |        ^                        ~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:139:33: note: in expansion of macro 'ESP_LOGE'
+  139 |                                 ESP_LOGE(TAG, "measure error. code: %d", com_rslt);
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:139:8: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  139 |                                 ESP_LOGE(TAG, "measure error. code: %d", com_rslt);
+      |        ^                        ~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:139:33: note: in expansion of macro 'ESP_LOGE'
+  139 |                                 ESP_LOGE(TAG, "measure error. code: %d", com_rslt);
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:139:33: note: in expansion of macro 'ESP_LOGE'
+  139 |                                 ESP_LOGE(TAG, "measure error. code: %d", com_rslt);
+      |                                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:143:17: note: in expansion of macro 'ESP_LOGE'
+  143 |                 ESP_LOGE(TAG, "init or setting error. code: %d", com_rslt);
+      |                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:143:17: note: in expansion of macro 'ESP_LOGE'
+  143 |                 ESP_LOGE(TAG, "init or setting error. code: %d", com_rslt);
+      |                 ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:143:8: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  143 |                 ESP_LOGE(TAG, "init or setting error. code: %d", com_rslt);
+      |        ^        ~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:143:17: note: in expansion of macro 'ESP_LOGE'
+  143 |                 ESP_LOGE(TAG, "init or setting error. code: %d", com_rslt);
+      |                 ^~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:143:8: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  143 |                 ESP_LOGE(TAG, "init or setting error. code: %d", com_rslt);
+      |        ^        ~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:143:17: note: in expansion of macro 'ESP_LOGE'
+  143 |                 ESP_LOGE(TAG, "init or setting error. code: %d", com_rslt);
+      |                 ^~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:265:27: error: format '%d' expects argument of type 'int', but argument 6 has type 'int32_t' {aka 'long int'} [-Werror=format=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+/home/wizzi/esp-idf/components/log/include/esp_log.h:340:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  340 | #define ESP_LOGE( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_ERROR,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/wizzi/esp-idf/projects/BME280/main/BME280.c:143:17: note: in expansion of macro 'ESP_LOGE'
+  143 |                 ESP_LOGE(TAG, "init or setting error. code: %d", com_rslt);
+      |                 ^~~~~~~~
+cc1: some warnings being treated as errors
+[2/9] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/wizzi/esp-idf/projects/BME280/sdkconfig
+-- Adding linker script /home/wizzi/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- App "bootloader" version: v5.1-dev-1908-g439a709c42-dirty
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/wizzi/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/wizzi/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script /home/wizzi/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/wizzi/esp-idf/components/bootloader /home/wizzi/esp-idf/components/bootloader_support /home/wizzi/esp-idf/components/efuse /home/wizzi/esp-idf/components/esp_app_format /home/wizzi/esp-idf/components/esp_common /home/wizzi/esp-idf/components/esp_hw_support /home/wizzi/esp-idf/components/esp_rom /home/wizzi/esp-idf/components/esp_system /home/wizzi/esp-idf/components/esptool_py /home/wizzi/esp-idf/components/freertos /home/wizzi/esp-idf/components/hal /home/wizzi/esp-idf/components/log /home/wizzi/esp-idf/components/bootloader/subproject/main /home/wizzi/esp-idf/components/bootloader/subproject/components/micro-ecc /home/wizzi/esp-idf/components/newlib /home/wizzi/esp-idf/components/partition_table /home/wizzi/esp-idf/components/soc /home/wizzi/esp-idf/components/spi_flash /home/wizzi/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wizzi/esp-idf/projects/BME280/build/bootloader
+[1/1] cd /home/wizzi/esp-idf/projects/BME280/build/bootloader/esp-idf/esptool_py && /home/wizzi/.espressif/python_env/idf5.1_py3.8_env/bin/python /home/wizzi/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/wizzi/esp-idf/projects/BME280/build/bootloader/bootloader.bin
+Bootloader binary size 0x6720 bytes. 0x8e0 bytes (8%) free.
+ninja: build stopped: subcommand failed.
